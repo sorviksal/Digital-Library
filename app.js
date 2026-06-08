@@ -78,8 +78,8 @@ function bookCardHtml(book) {
       <div class="absolute inset-0 flex-col items-center justify-center p-4 text-center"
            style="display:none;background:${bg};">
         <div class="absolute left-0 top-0 bottom-0 w-5 opacity-40" style="background:${dark};"></div>
-        <p class="font-bold text-white text-sm leading-tight drop-shadow-lg z-10 relative">${book.title}</p>
-        <p class="text-white/70 text-xs mt-1 z-10 relative">${book.author.split(' ').pop()}</p>
+        <p class="khmer font-bold text-white text-sm leading-tight drop-shadow-lg z-10 relative">${book.title}</p>
+        <p class="khmer text-white/70 text-xs mt-1 z-10 relative">${book.author.split(' ').pop()}</p>
       </div>
 
       <!-- Rating pill -->
@@ -98,12 +98,12 @@ function bookCardHtml(book) {
     <!-- Body -->
     <div class="p-4 flex flex-col flex-1">
       <!-- Genre pill -->
-      <span class="inline-block self-start text-xs font-medium px-2.5 py-0.5 rounded-full mb-2"
+      <span class=" khmer inline-block self-start text-xs font-medium px-2.5 py-0.5 rounded-full mb-2"
             style="background:${bg}28;color:${dark};">${book.genre}</span>
       <!-- Title -->
-      <p class="font-semibold text-[#1a1410] text-sm leading-snug line-clamp-2 mb-1 group-hover:text-[#2f00ff] transition-colors">${book.title}</p>
+      <p class="khmer font-semibold text-[#1a1410] text-sm leading-snug line-clamp-2 mb-1 group-hover:text-[#2f00ff] transition-colors">${book.title}</p>
       <!-- Author -->
-      <p class="text-[#8b7355] text-xs mb-auto pb-3">${book.author} · ${book.year}</p>
+      <p class="khmer text-[#8b7355] text-xs mb-auto pb-3">${book.author} · ${book.year}</p>
       <!-- Read more button -->
       <button class="khmer inline-flex items-center gap-1.5 self-start text-xs font-medium text-[#1a1410] bg-[#f5f0e8] border border-[#d9cdb8] hover:bg-[#1a1410] hover:text-white hover:border-[#1a1410] focus:outline-none focus:ring-2 focus:ring-[#c9a84c] px-3.5 py-1.5 rounded-full transition-all duration-200 mt-1">
         អានបន្ថែម
@@ -236,6 +236,7 @@ buildGenreFilters();
 filterBooks();
 const shelfCountEl = document.getElementById('shelf-count');
 if (shelfCountEl) shelfCountEl.textContent = shelf.length;
+
 // ── Articles Data ─────────────────────────────────────────
 const ARTICLES = [
 {
